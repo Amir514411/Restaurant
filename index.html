@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رستوران آنلاین</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu">
+        <h2>منوی رستوران</h2>
+        <div class="item">
+            <p>پیتزا - 150,000 تومان</p>
+            <button onclick="addToCart(1)">اضافه به سبد خرید</button>
+        </div>
+        <div class="item">
+            <p>برگر - 100,000 تومان</p>
+            <button onclick="addToCart(2)">اضافه به سبد خرید</button>
+        </div>
+        <div class="item">
+            <p>کوکاکولا - 30,000 تومان</p>
+            <button onclick="addToCart(3)">اضافه به سبد خرید</button>
+        </div>
+    </div>
+
+    <div class="cart">
+        <h3>سبد خرید شما</h3>
+        <ul id="cartItems"></ul>
+        <p id="cartTotal">مجموع: 0 تومان</p>
+    </div>
+
+    <div class="order-result">
+        <p id="orderResult"></p>
+        <button onclick="submitOrder()">ارسال سفارش</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
